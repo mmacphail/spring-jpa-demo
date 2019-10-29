@@ -54,4 +54,10 @@ class PersonServiceIT {
             log.info(person.firstName + " " + person.lastName + " born the " + person.dateOfBirth)
         );
     }
+
+    @Test
+    void getFirstTenLastNameShouldReturnAResult() {
+        List<String> firstTenLastNames = personService.getFirstTenLastNames();
+        assertThat(firstTenLastNames.size()).isEqualTo(10);
+    }
 }

@@ -35,6 +35,10 @@ public class PersonService {
         );
     }
 
+    public List<String> getFirstTenLastNames() {
+        return personRepository.getFirstTenLastName();
+    }
+
     private Specification<Person> personBornBefore(ZonedDateTime date) {
         return (person, q, cb) -> cb.lessThanOrEqualTo(person.get("dateOfBirth"), date);
     }
