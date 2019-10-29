@@ -8,6 +8,15 @@
   </a>
 </p>
 
+>  A demo project to use Spring with JPA APIs.
+
+## Install
+
+Clone this repository. Then use maven to build it.
+```sh
+./mwnw clean install
+```
+
 ## Author
 
 * Twitter: [@MalcMacphail](https://twitter.com/MalcMacphail)
